@@ -22,6 +22,8 @@
 <key>TextOnly</key>
 <false/>
 ```
+* **Пример результата применения**:
+![textOnly example](./images/clover_textonly.png)
 
 #### 1.2 ConsoleMode
 
