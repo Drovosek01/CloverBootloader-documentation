@@ -2,9 +2,9 @@
 
 ## Оглавление
 
-1. GUI
-* 1.1 TextOnly
-* 1.2 ConsoleMode
+[1. GUI](#1-gui)
+* [1.1 TextOnly](#11-textonly)
+* [1.2 ConsoleMode](#12-consolemode)
 
 ### 1. GUI
 
