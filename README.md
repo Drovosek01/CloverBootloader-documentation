@@ -6,6 +6,10 @@ ENGLISH (coming soon)
 
 Я планирую заняться переводом на английский язык, как только будет оформлена основная часть документации на русском языке.
 
+## Готовое
+
+[Описание параметров config.plist](./docs/config_parametrs.md) - начал оформлять
+
 ## Предисловие
 
 Когда я начал знакомится с загрузчиком [Opencore](https://github.com/acidanthera/OpenCorePkg), то начал искать официальную документацию этого загрузчика и, на мое удивление, нашел ее прямо в [репозитории](https://github.com/acidanthera/OpenCorePkg/tree/master/Docs) загрузчика в формате [TeX](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/master/Docs/Configuration.tex) и в формате [PDF](https://github.com/acidanthera/OpenCorePkg/raw/master/Docs/Configuration.pdf), а так же есть вроде как неофициальная [веб версия](https://dortania.github.io/docs/latest/Configuration.html) этой документация на сайте dortania.
