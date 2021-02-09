@@ -36,3 +36,17 @@
 <key>ConsoleMode</key>
 <string>0</string>
 ```
+
+#### 1.3 Theme
+
+* **Тип значения**: `string`
+* **Значение по умолчанию**: `embedded`
+* **Возможные значения**: `random`, `embedded`, `[string]`
+* **Описание**: Если вы не включили текстовый режим загрузчика Clover, то оформление графической оболочки будет зависеть от выбранной темы. Значение данного параметра указывает на имя папки в `/CLOVER/themes`, которая содержит соответствующую структуру файлов. TODO - добавить ссылку на инструкцию по созданию темы и theme.plist
+
+Тему можно скачать и установить вручную просто скачав архив с нужной темой, распаковав его в папку `/CLOVER/themes` и указав название папки с файлами темы параметре `Theme`. Официальный список и содержимое тем есть в [github](https://github.com/CloverHackyColor/CloverThemes) репозитории загрузчика (так же хранилище тем есть на [SourceForge](https://sourceforge.net/p/cloverefiboot/themes/ci/master/tree/themes/), но это устаревший вариант, т.к. он давно никем не обновляется) или в соответствующей теме форума [insanelymac](https://www.insanelymac.com/forum/topic/288685-clover-themes/). Так же есть приложения для удобного просмотра тем и их автоматической настройки - [Clover.app](https://www.insanelymac.com/forum/topic/341047-cloverapp-testing/) и [Clover Theme Manager](https://www.insanelymac.com/forum/topic/302674-clover-theme-manager/) (он вроде бы устарел).
+* **Пример кода**:
+```xml
+<key>Theme</key>
+<string>BGM</string>
+```
