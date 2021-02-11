@@ -8,7 +8,7 @@ ENGLISH (coming soon)
 
 ## Готовое
 
-[Описание параметров config.plist](./docs/config_parametrs.md) - начал оформлять
+[Описание параметров config.plist](./docs/config_parameters.md) - начал оформлять
 
 ## Предисловие
 
