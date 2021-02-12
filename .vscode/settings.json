@@ -4,16 +4,19 @@
         "aptio",
         "bootx",
         "clovy",
+        "dortania",
         "edid",
         "fix",
         "insanelymac",
         "memory",
         "nvram",
+        "opencore",
         "optimus",
         "preboot",
         "show",
         "uefi",
         "квирков",
-        "кексты"
+        "кексты",
+        "кловер"
     ]
 }
