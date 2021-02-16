@@ -466,19 +466,132 @@
 ##### 1.15.1 Entries
 
 - **Тип значения**: `array`
-- **Возможные значения**: смотрите ниже *Описание внутренних параметров*
+- **Возможные значения**: смотрите ниже [Описание внутренних параметров](#описание-внутренних-параметров-custom)
+- **Пример кода**:
+
+    ```xml
+    <key>Entries</key>
+    <array>
+        <dict>
+            <key>Hidden</key>
+            <false/>
+            <key>Disabled</key>
+            <false/>
+            <key>Image</key>
+            <string>os_mageia</string>
+            <key>Path</key>
+            <string>\EFI\MAGEIA\GRUBX64.efi</string>
+            <key>Title</key>
+            <string>Mageia Linux</string>
+            <key>Type</key>
+            <string>Linux</string>
+        </dict>
+        <dict>
+            <key>Hidden</key>
+            <false/>
+            <key>Hotkey</key>
+            <string>M</string>
+            <key>Volume</key>
+            <string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
+            <key>Arguments</key>
+            <string>Kernel=mach_kernel</string>
+            <key>Disabled</key>
+            <true/>
+            <key>AddArguments</key>
+            <string>-v</string>
+            <key>Path</key>
+            <string>\EFI\BOOT\BOOTX64.efi</string>
+            <key>Title</key>
+            <string>MyCustomEntry</string>
+            <key>NoCaches</key>
+            <false/>
+            <key>InjectKexts</key>
+            <false/>
+            <key>Type</key>
+            <string>OSXRecovery</string>
+        </dict>
+        <dict>
+            <key>Hidden</key>
+            <false/>
+            <key>Volume</key>
+            <string>454794AC-760D-46E8-8F77-D6EB23D2FD32</string>
+            <key>SubEntries</key>
+            <array>
+                <dict>
+                    <key>AddArguments</key>
+                    <string>-v</string>
+                    <key>Title</key>
+                    <string>Boot OS X 10.8.5 (12F36) Mountain Lion in Verbose Mode</string>
+                </dict>
+            </array>
+            <key>Type</key>
+            <string>OSX</string>
+            <key>Title</key>
+            <string>OS X 10.8.5 (12F36) Mountain Lion</string>
+            <key>NoCaches</key>
+            <false/>
+            <key>InjectKexts</key>
+            <false/>
+        </dict>
+    </array>
+    ```
+
 
 ##### 1.15.2 Legacy
 
 - **Тип значения**: `array`
-- **Возможные значения**: смотрите ниже *Описание внутренних параметров*
+- **Возможные значения**: смотрите ниже [Описание внутренних параметров](#описание-внутренних-параметров-custom)
+- **Пример кода**:
+
+    ```xml
+    <key>Legacy</key>
+    <array>
+        <dict>
+            <key>Hidden</key>
+            <false/>
+            <key>Hotkey</key>
+            <string>L</string>
+            <key>Volume</key>
+            <string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
+            <key>Disabled</key>
+            <true/>
+            <key>Type</key>
+            <string>Windows</string>
+            <key>Title</key>
+            <string>MyLegacyEntry</string>
+        </dict>
+    </array>
+    ```
 
 ##### 1.15.3 Tool
 
 - **Тип значения**: `array`
-- **Возможные значения**: смотрите ниже *Описание внутренних параметров*
+- **Возможные значения**: смотрите ниже [Описание внутренних параметров](#описание-внутренних-параметров-custom)
+- **Пример кода**:
 
-**Описание внутренних параметров**:
+    ```xml
+    <key>Tool</key>
+    <array>
+        <dict>
+            <key>Hidden</key>
+            <false/>
+            <key>Hotkey</key>
+            <string>S</string>
+            <key>Volume</key>
+            <string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
+            <key>Arguments</key>
+            <string>-b</string>
+            <key>Disabled</key>
+            <false/>
+            <key>Path</key>
+            <string>\EFI\CLOVER\TOOLS\Shell64-v1.efi</string>
+            <key>Title</key>
+            <string>MyCustomShell</string>
+        </dict>
+    </array>
+    ```
+
+##### Описание внутренних параметров Custom:
 - `Disabled` - отключает всю структуру и она не принимается во внимание.
 - `Volume` - Имя тома или GUID, которые будут использоваться при поиске
 загрузчика на разделах дисков.
