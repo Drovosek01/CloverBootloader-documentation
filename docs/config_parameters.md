@@ -34,6 +34,7 @@
 - [2.1 Timeout](#21-timeout)
 - [2.2 Fast](#22-fast)
 - [2.3 DefaultVolume](#23-defaultvolume)
+- [2.4 DefaultLoader](#24-defaultloader)
 
 ### 1. GUI
 
@@ -701,6 +702,30 @@
 ### 2.3 DefaultVolume
 
 - **Тип значения**: `boolean`
+- **Значение по умолчанию**: `LastBootedVolume`
+- **Возможные значения**: `LastBootedVolume`, `Macintosh HD`, `57272A5A-7EFE-4404-9CDA-C33761D0DB3C`, `HD(1,GPT,57272A5A-7EFE-4404-9CDA-C33761D0DB3C,0x800,0xFF000)`, `[text]`
+- **Описание**:
+
+    Этот параметр используется, чтобы указать, какой раздел является загрузочным по умолчанию в Clover.
+
+    В качестве значений, можно указать:
+    - имя раздела, например `Macintosh HD`.
+    - *GUID* раздела, например `57272A5A-7EFE-4404-9CDA-C33761D0DB3C`. Точное значение можно узнать, например в `preboot.log` или `debug.log` или `Clover boot log`.
+    - часть пути к устройству, например `HD(1,GPT,57272A5A-7EFE-4404-9CDA-C33761D0DB3C,0x800,0xFF000)`. Точное значение можно узнать, например в `preboot.log` или `debug.log` или `Clover boot log`.
+    - `LastBootedVolume` - означает выбрать тот раздел, который был запущен после последнего запуска компьютера.
+
+    Однако, имя может быть также задано в NVRAM после перезагрузки из контрольной панели "Загрузочный Диск". Имя, заданное в NVRAM является приоритетным.
+
+- **Пример кода**:
+
+    ```xml
+    <key>DefaultVolume</key>
+    <string>LastBootedVolume</string>
+    ```
+
+### 2.4 DefaultLoader
+
+- **Тип значения**: `string`
 - **Значение по умолчанию**: `LastBootedVolume`
 - **Возможные значения**: `LastBootedVolume`, `Macintosh HD`, `57272A5A-7EFE-4404-9CDA-C33761D0DB3C`, `HD(1,GPT,57272A5A-7EFE-4404-9CDA-C33761D0DB3C,0x800,0xFF000)`, `[text]`
 - **Описание**:
