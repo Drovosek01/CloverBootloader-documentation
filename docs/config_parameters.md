@@ -35,6 +35,7 @@
 - [2.2 Fast](#22-fast)
 - [2.3 DefaultVolume](#23-defaultvolume)
 - [2.4 DefaultLoader](#24-defaultloader)
+- [2.5 Legacy](#25-legacy)
 
 ### 1. GUI
 
@@ -739,4 +740,25 @@
     ```xml
     <key>DefaultLoader</key>
     <string>boot.efi</string>
+    ```
+
+### 2.5 Legacy
+
+- **Тип значения**: `string`
+- **Значение по умолчанию**: `PBR`
+- **Возможные значения**: `PBR`, `PBRtest`, `PBRsata`, `LegacyBiosDefault`
+- **Описание**:
+
+    Этот параметр используется для запуска старых версий Windows или Linux.
+
+    Очень сильно зависит от аппаратной части и от BIOS, поэтому разработаны несколько алгоритмов, и выбор алгоритма производится в этом ключе.
+
+    - `LegacyBiosDefault` - это значение используется для тех UEFI BIOS, где есть протокол LegacyBios.
+    - `PBRtest`, `PBR`, `PBRsata` – варианты алгоритма *PBR boot*, подбирается индивидуально - кому с каким повезет.
+
+- **Пример кода**:
+
+    ```xml
+    <key>Legacy</key>
+    <string>PBR</string>
     ```
